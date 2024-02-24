@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid black;
+    z-index: 10;
+    background-color: white;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.logo{
+    width:150px ;
+}
+table {
+    background: linear-gradient(rgb(255, 255, 255),rgb(216, 216, 94));
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 150px;
+    justify-content: center;
+}
+.slika {
+    width: 350px;
+    height: 500px;
+    display: block;
+}
+td {
+    text-align: center;
+    padding: 10px;
+}
+table p{
+    font-weight: 800;
+}
+.tekst p{
+    width: 50%;
+    margin:auto ;
+    text-align:justify ;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    background: linear-gradient(rgb(255, 255, 255),rgb(216, 216, 94));
+}
+.pozadina{
+    background: linear-gradient(rgb(255, 255, 255),rgb(216, 216, 94));
+}
+.lista{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.lista .zenska{
+    flex: 1;
+    margin-right: 20px;
+}
+.lista .muska{
+    flex: 1; 
+    margin-right: 20px;
+}
+.lista .deca{
+    flex: 1;
+}
+ul {   
+    margin-left: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    margin-bottom: 10px;
+}
+.lista h2{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer h3{
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+.mreze{
+    display: flex;
+}
+.mreze a{
+    width:80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.mreze a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.mreze a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:-90px;
+    left: 0;
+    background:linear-gradient(-45deg,white,rgb(216, 216, 94));
+    position: absolute;
+    transition: 0.5s;
+}
+.mreze a:hover::after{
+    top:0;
+}
+.mreze a:hover .fa-brands{
+    color: white;
+}

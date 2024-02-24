@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid black;
+    z-index: 10;
+    background-color: white;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.logo{
+    width:150px ;
+}
+.sat{
+    background: linear-gradient(rgb(255, 255, 255),rgb(216, 216, 94));
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+}
+.sadrzaj{
+    top:50%;
+    position: absolute;
+    color:black;
+    left:35%;
+}
+.sadrzaj h1{
+    font-size: 50px;
+    font-weight: 700;    
+}
+.vreme{
+    display: flex;
+    margin-left: 40px;
+}
+.vreme div{
+    flex-basis: 100px;
+}
+.vreme div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}

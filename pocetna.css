@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid black;
+    z-index: 10;
+    background-color: white;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.logo{
+    width:150px ;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(255, 255, 255),rgb(216, 216, 94));
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header h1{
+    margin-top: 100px;
+    font-size: 150px;
+    line-height: 11vw;
+}
+.header p{
+    max-width: 600px;
+    font-weight: 500;
+}
+.slika1{
+    width: 80%;
+    max-width: 500px;
+    height: 700px;
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+}
+.kontakt{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.kontakt-levo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.naslov-levo h2{
+    font-weight: 600;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.naslov-levo hr{
+    border: none;
+    width: 210px;
+    height: 2px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.input{
+    width: 400px;
+    height: 50px;
+    padding-left: 25px;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.kontakt-levo textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+} 
+.kontakt-levo button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px ;
+    font-size: 16px;
+    color:black;
+    gap:10px;
+    border-radius: 50px;
+    background:linear-gradient(270deg,white,rgb(216, 216, 94));
+    cursor: pointer;
+}
+.kontakt-desno img{
+    width: 500px;
+}
+.mapa{
+    width: 50%;
+    height: 500px;
+    border: 2px solid black;
+    margin: 30px;
+}
+.info{
+    flex-direction: column;
+    align-items: end;
+    border: 2px solid black;
+    padding: 30px;
+    background:linear-gradient(white,rgb(216, 216, 94));
+}
+.lokacija{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer{
+    width: 100%;
+    height: 30vh;
+    background:linear-gradient(white,rgb(216, 216, 94));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer h3{
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: -120px;
+}
+.mreze{
+    display: flex;
+}
+.mreze a{
+    width:80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.mreze a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.mreze a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:-90px;
+    left: 0;
+    background:linear-gradient(-45deg,white,rgb(216, 216, 94));
+    position: absolute;
+    transition: 0.5s;
+}
+.mreze a:hover::after{
+    top:0;
+}
+.mreze a:hover .fa-brands{
+    color: white;
+}

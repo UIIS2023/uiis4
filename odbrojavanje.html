@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odbrojavanje</title>
+    <link rel="stylesheet" href="odbrojavanje.css">
+</head>
+<body>
+    <nav>
+        <img src="https://static.zara.net/stdstatic/5.25.1/images/logo_rss.png" class="logo">
+        <ul>
+            <li id="li"><a href="pocetna.html">Početna</a></li>
+            <li id="li"><a href="prva.html">Proizvodi</a></li>
+            <li id="li"><a href="druga.html">Prodavnice</a></li>
+            <li id="li"><a href="odbrojavanje.html">Odbrojavanje</a></li>
+        </ul>
+       </nav>
+  <div class="sat">
+    <div class="sadrzaj">
+        <h1>Sniženje počinje za:</h1>
+        <div class="vreme">
+            <div>
+                <p id="dani">00</p>
+                <span>Dana</span>
+            </div>
+            <div>
+                <p id="sati">00</p>
+                <span>Sati</span>
+            </div>
+            <div>
+                <p id="minuti">00</p>
+                <span>Minuta</span>
+            </div>
+            <div>
+                <p id="sekunde">00</p>
+                <span>Sekundi</span>
+            </div>
+        </div>
+    </div>
+  </div> 
+  <script>
+    var odbrojavanje=new Date("Feb 25,2024 22:00:00").getTime();
+    var x=setInterval(function(){
+        var sad=new Date().getTime();
+        var razlika=odbrojavanje-sad;
+        var dani=Math.floor(razlika/(1000*60*60*24));
+        var sati=Math.floor((razlika%(1000*60*60*24))/(1000*60*60));
+        var minuti=Math.floor((razlika%(1000*60*60))/(1000*60));
+        var sekunde=Math.floor((razlika%(1000*60))/1000);
+
+        document.getElementById("dani").innerHTML=dani;
+        document.getElementById("sati").innerHTML=sati;
+        document.getElementById("minuti").innerHTML=minuti;
+        document.getElementById("sekunde").innerHTML=sekunde;
+    },1000);
+  </script>
+</div>
+</body>
+</html>
